@@ -12,15 +12,20 @@
 <h2>NOME</h2>
 
 <form>
+   <fieldset>
+    <legend>FICHA CADASTRO:</legend>
     <label for="fname">Primeiro Nome:</label><br>
     <input type="text" id="fname" name="fname" value=""><br>
     <label for="lname">Sobrenome:</label><br>
     <input type="text" id="lname" name="lname"  value=""><br>
     <label for="email">Email:</label><br>
     <input type="text" id="email" name="email"><br>
+    <label for="birthday">Diga o ano que nasceu:</label><br>
+    <input type="date" id="birthday" name="birthday">
+   </fieldset>
 </form>
 
-<p>Quantas vezes já participou de algum retiro espirítual?</p>
+<p>Quantas vezes já participou de algum retiro espiritual?</p>
 
 <form>
     <label for="cars">Quantos?</label>
@@ -44,6 +49,13 @@
     <input type="radio" id="other" name="gender" value="other">
     <label for="other">Outros</label>
 </form>
+
+
+
+
+
+
+<button type="button" onclick="alert('Obrigado por Cadastrar a sua ficha!')">Enviar!</button>
 
 </body>
 </html>
