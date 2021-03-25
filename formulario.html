@@ -7,55 +7,50 @@
     <title>Ficha de Cadastro</title>
 </head>
 <body>
-    <h1>Formulário para preenchimento de Ficha de cadastro para os Participantes do Retiro Make War</h1>
+   
+    <div>
+        <h1>Ficha de Cadastro do Retiro</h1>
+    </div>
 
-<h2>NOME</h2>
+    <form>
+        <fieldset>
+            
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome"> 
+            </div>
 
-<form>
-   <fieldset>
-    <legend>FICHA CADASTRO:</legend>
-    <label for="fname">Primeiro Nome:</label><br>
-    <input type="text" id="fname" name="fname" value=""><br>
-    <label for="lname">Sobrenome:</label><br>
-    <input type="text" id="lname" name="lname"  value=""><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email" name="email"><br>
-    <label for="birthday">Diga o ano que nasceu:</label><br>
-    <input type="date" id="birthday" name="birthday">
-   </fieldset>
-</form>
+            <div>
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
 
-<p>Quantas vezes já participou de algum retiro espiritual?</p>
+        </fieldset>
 
-<form>
-    <label for="cars">Quantos?</label>
-    <select name="cars" id="cars">
-        <option value="one">Um</option>
-        <option value="two">Dois</option>
-        <option value="three">Três</option>
-        <option value="Muitos">Muitos</option>
-    </select>
-    <input type="submit" value="Enviar">
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+
+        <div>
+            <label>Qual o seu Gênero?</label>
+            <label>
+                <input type="radio" name="masculino" value="feminino">Masculino
+            </label>
+            <label>
+                <input type="radio" name="feminino" value="feminino">Feminino
+            </label>
+            <label>
+                <input type="radio" name="outros" value="outros">Outros
+            </label>
+        </div>
+
+        <div></div>
+
+
+    </form>
     
-</form>
-
-<h2>SEXO</h2>
-
-<form>
-    <input type="radio" id="male" name="gender" value="male">
-    <label for="masculino">Masculino</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Feminino</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Outros</label>
-</form>
-
-
-
-
-
-
-<button type="button" onclick="alert('Obrigado por Cadastrar a sua ficha!')">Enviar!</button>
+    
 
 </body>
 </html>
